@@ -4,15 +4,47 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>My Bookshelf</title>
-    <link rel="stylesheet" href="style.css" />
-    <script defer src="app.js"></script>
+    <link rel="stylesheet" href="./styles/style.css" />
+    <script defer src="./scripts/app.js"></script>
   </head>
   <body class="">
     <header>
       <h1>A Library App</h1>
+      <dialog id="dialog" data-modal>
+        <form action="">
+          <fieldset>
+            <label for="book-title">Book title</label>
+            <input minlength="1" name="book-title" type="text" placeholder="e.g. The Secret" />
+          </fieldset>
+          <fieldset>
+            <label for="book-author">Author</label>
+            <input minlength="1" name="book-author" type="text" placeholder="e.g. Jimmy Hendrixx" />
+          </fieldset>
+          <fieldset>
+            <label for="book-pages">Amount of pages</label>
+            <input minlength="1" name="book-pages" type="text" placeholder="e.g. 112" />
+          </fieldset>
+          <fieldset>
+            <label for="read-status">Read?</label>
+            <input type="checkbox" name="read-status" id="read-status" value="unchecked" />
+          </fieldset>
+          <fieldset class="form-buttons">
+            <button id="create" type="button">Create</button>
+            <button id="cancel" type="button">Cancel</button>
+          </fieldset>
+        </form>
+      </dialog>
+      <section id="lib">
+        <div class="lib-wrapper">
+          <div class="lib-items">
+            <p>Item</p>
+            <button id="new-book" type="button">New book</button>
+          </div>
+        </div>
+      </section>
       <p>
         built by <a href="https://github.com/madebydevon">@madebydevon</a> for
-        <a href="https://www.theodinproject.com/lessons/node-path-javascript-library/project_submissions"
+        <a href="https://www.theodinproject.com/lessons/node-path-javascript-library/" target="_blank"
           >The Odin Project curriculum</a
         >
       </p>
