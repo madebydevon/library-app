@@ -99,7 +99,7 @@ function displayLibrary(libraryArray) {
 
     bookTitle.textContent = `${libraryArray[items].title}`;
     bookAuthor.textContent = `${libraryArray[items].author}`;
-    totalPages.textContent = `${libraryArray[items].pages}`;
+    totalPages.textContent = `${libraryArray[items].pages} page(s)`;
     readStatus.textContent = `${libraryArray[items].read}`;
     deleteButton.textContent = "Delete book";
 
