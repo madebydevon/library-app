@@ -12,15 +12,15 @@
       <form action="">
         <fieldset>
           <label for="book-title">Book title</label>
-          <input minlength="1" name="book-title" type="text" placeholder="e.g. Book" />
+          <input minlength="1" maxlength="50" name="book-title" type="text" placeholder="e.g. Book" />
         </fieldset>
         <fieldset>
           <label for="book-author">Author</label>
-          <input minlength="1" name="book-author" type="text" placeholder="e.g. Jimmy" />
+          <input minlength="1" maxlength="48" name="book-author" type="text" placeholder="e.g. John" />
         </fieldset>
         <fieldset>
           <label for="book-pages">Amount of pages</label>
-          <input minlength="1" name="book-pages" type="text" placeholder="e.g. 112" />
+          <input minlength="1" maxlength="10" name="book-pages" type="text" placeholder="e.g. 112" />
         </fieldset>
         <fieldset>
           <label for="read-status">Read?</label>
@@ -34,20 +34,18 @@
     </dialog>
     <header>
       <h1>A Library App</h1>
+      <p>
+        built by <a href="https://github.com/madebydevon">@madebydevon</a> for
+        <a href="https://www.theodinproject.com/lessons/node-path-javascript-library/" target="_blank"
+          >The Odin Project curriculum</a
+        >
+      </p>
+      <button id="new-book" type="button">New book</button>
     </header>
     <section id="page">
       <div id="lib">
         <div class="lib-wrapper"></div>
-        <button id="new-book" type="button">New book</button>
       </div>
-      <footer>
-        <p>
-          built by <a href="https://github.com/madebydevon">@madebydevon</a> for
-          <a href="https://www.theodinproject.com/lessons/node-path-javascript-library/" target="_blank"
-            >The Odin Project curriculum</a
-          >
-        </p>
-      </footer>
     </section>
   </body>
 </html>
